@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Aguante el fulbo</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+                <form action="" method="post" target="_blank">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" id="NomApe" apellido="NomApe" placeholder="Pepito" required>
+                    <br>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="ejemplo@gmail.com" required>
+                    <br>
+                    <label>Edad</label>
+                    <input type="number" min="0" max="150" required>
+                    <br>
+                    <label>Color preferido</label>
+                    <select required>
+                        <option value="1">azul</option>
+                        <option value="2">rojo</option>
+                        <option value="3">amarillo</option>
+                    </select>
+                    <br>
+                    <label>Comentario</label>
+                    <input type="text" minlength="10" maxlength="140" required>
+                    <button>Enviar</button>
+                </form>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright labcomII.com</p>
+    </footer>
+</body>
+
+</html>
