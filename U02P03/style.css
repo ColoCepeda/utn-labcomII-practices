@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+  font-family: sans-serif;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #242424;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 20px;
+  color: #606060;
+  font-weight: 800;
+}
+
+p {
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+ul {
+  font-family: monospace;
+  font-size: 18px;
+  margin-left: 100px;
+  padding: 20px;
+  border: 2px solid blue;
+  max-width: 40%;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+a {
+  font-weight: bold;
+}
+
+ul a {
+  color: orange;
+  text-decoration: underline;
+}
+
+ul li:hover {
+  background-color: rgba(245, 245, 245, 0.1);
+}
+
+li.neuquen,
+li.rio-negro {
+  color: green;
+}
