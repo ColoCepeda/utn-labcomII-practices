@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js" defer></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese nombre...">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese e-mail">
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required placeholder="Ingrese subject">
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label for="experiencia">Años de Experiencia:</label>
+            <input type="number" id="experiencia" name="experiencia" min="1" max="49" required><br><br>
+
+            <label for="word">Conocimientos en:</label>
+            <input type="checkbox" id="word" name="conocimientos" value="Word">
+            Word<br>
+
+            <input type="checkbox" id="excel" name="conocimientos" value="Excel">
+            Excel<br>
+
+            <input type="checkbox" id="jira" name="conocimientos" value="Jira">
+            Jira<br>
+
+            <input type="checkbox" id="visual_studio" name="conocimientos" value="Visual Studio">
+            Visual Studio<br>
+
+            <input type="checkbox" id="oracle" name="conocimientos" value="Oracle">
+            Oracle<br>
+
+            <input type="checkbox" id="sql_server" name="conocimientos" value="SQL Server">
+            SQL Server<br>
+
+            <input type="checkbox" id="ubuntu" name="conocimientos" value="Ubuntu">
+            Ubuntu<br>
+
+            <input type="checkbox" id="teams" name="conocimientos" value="Teams">
+            Teams<br>
+
+            <input type="checkbox" id="seguridad_informatica" name="conocimientos" value="Seguridad Informatica">
+            Seguridad informática<br>
+
+            <input type="checkbox" id="robotica" name="conocimientos" value="Robotica">
+            Robotica<br><br>
+
+            <label for="remuneracion">Remuneración Bruta Pretendida:</label>
+            <input type="number" id="remuneracion" name="remuneracion" min="1" required><br><br>
+
+            <label for="tipo_relacion" id="tipo_relacion">Tipo de Relación Pretendida:</label>
+            <input type="radio" id="autonomo" name="tipo_relacion" value="Autonomo" onclick="changeColor()">
+            Autónomo<br>
+
+            <input type="radio" id="monotributista" name="tipo_relacion" value="Monotributista" onclick="changeColor()">
+            Monotributista<br>
+
+            <input type="radio" id="dependencia" name="tipo_relacion" value="Relación de Dependencia"
+                onclick="changeColor()">
+            Relación de Dependencia<br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required oninput="contarEspacios()"></textarea>
+            <div class="cantidadEspacios"></div><br><br>
+
+            <div class="buttons">
+                <button type="button" class="button" onclick="mostrarResumen()">Enviar</button>
+                <button class="return" onclick="window.location.href='index.html'">Volver</button>
+            </div>
+
+        </form>
+        <div id="resumen" style="display: none;"></div>
+    </div>
+
+</body>
+
+</html>

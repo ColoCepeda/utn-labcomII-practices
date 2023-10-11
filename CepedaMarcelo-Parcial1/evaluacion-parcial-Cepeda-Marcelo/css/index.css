@@ -1,0 +1,106 @@
+*{
+    font-family: Verdana;
+    color: rgb(71, 71, 71);
+    font-size: small;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.cabecera {
+    background-color: rgb(60, 66, 95);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    /* Redondear la imagen y darle un tamaño maximo de 200px */
+    align-content: center;
+    max-height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 10px;
+
+}
+
+.presentacion {
+    background-color: white;
+    margin: 2%;
+    color: rgb(92, 92, 92);
+    padding: 2%;
+    border-radius: 2em;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.button {
+    padding: 1%;
+    background-color: lightgrey;
+
+}
+
+.title {
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 2em;
+}
+
+.date {
+    color: gray;
+    font-size: small;
+}
+
+h3 {
+    background-color: rgb(183, 176, 189);
+    padding: 2px;
+}
+
+.my-button {
+    padding: 10px 20px;
+    height: 50px;
+    background-color: rgb(60, 66, 95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.datos-personales{
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 10px; 
+    padding: 2%;
+    border-radius: 10px;
+    color: white;
+    padding: 0%;
+  }
+  
+  .datos {
+    padding: 10px;
+    border-radius: 10px; 
+    color: black;
+  }
+  
+  .datos.cabecera {
+    grid-column: span 2;
+    color: white;
+    background-color: rgb(22, 100, 107);
+  }
+  
+  .izquierda {
+    grid-column: 1;
+    grid-row:2/ span 6;
+    background-color: rgb(191, 224, 191);
+
+  }
+  
+  .derecha {
+    grid-column: 2;
+    background-color: lightgrey;
+    
+  }

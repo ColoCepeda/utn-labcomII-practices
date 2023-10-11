@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form action="">
+        <select name="selector-ciudad" id="selector-ciudad" onchange="consultarCiudad();">
+            <option value="" disabled selected>-Seleccionar-</option>
+            <option value="ROSARIO">ROSARIO</option>
+            <option value="SANTA FE">SANTA FE</option>
+            <option value="PARIS">PARIS</option>
+        </select>
+    </form>
+    <section id="section-weather-result">
+        <div id="card" >
+
+        </div>
+    </section>
+</body>
+
+</html>

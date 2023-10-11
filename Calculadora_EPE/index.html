@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora EPE</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo-epe-blanco.png" alt="Logo EPE">
+            <img src="images/logo-epe.png" alt="Logo oficina virtual">
+        </div>
+        <div class="titulo">
+            <h2>Calculadora de consumo</h2>
+        </div>
+        <form action="#">
+            <div class="data user">
+                <label>Tipo de usuario</label>
+                <select id="tipo">
+                    <option disabled selected value="0">--Seleccione una opcion--</option>
+                    <option value="residencial">Residencial</option>
+                    <option value="industrial">Industrial</option>
+                </select>
+                <img class="logo" src="images/id-card.svg" alt="">
+            </div>
+            <div class="data zone">
+                <label>Zona del domicilio</label>
+                <select name="" id="zona">
+                    <option disabled selected value="0">--Seleccione una opcion--</option>
+                    <option value="centro">Distrito centro</option>
+                    <option value="sur">Distrito Sur</option>
+                    <option value="oeste">Distrito Oeste</option>
+                    <option value="norte">Distrito Norte</option>
+                </select>
+                <img class="logo" src="images/notes2.svg" alt="">
+            </div>
+            <div class="data kwh">
+                <label>Cantidad de kWh del mes</label>
+                <input type="text" id="cantidad">
+                <img class="logo" src="images/approved.svg" alt="">
+            </div>
+            <div class="data form">
+                <button type="button" onclick="calculate()">Calcular</button>
+                <img class="logo" src="images/price-list.svg" alt="">
+            </div>
+            <div id="result">Aqui vera su costo mensual</div>
+        </form>
+    </div>
+</body>
+
+</html>

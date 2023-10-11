@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="product-image">
+        <img id="mainProductImage" src="images/default.jpg" alt="Producto">
+    </div>
+
+
+    <div class="product-details">
+        <div class="product-details-content">
+            <h2>Celulares</h2>
+            <form action="">
+        </div>
+        <div class="form-control"> <label>Color</label> <select onchange="changeProductImage()">
+                <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                <option value="grafito">Grafito</option>
+                <option value="sierra">Sierra</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </select> </div>
+        <div class="form-control"> <label>Capacidad</label>
+            <select id="capacidad">
+                <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                <option class="cap-option" value="128">128 GB</option>
+                <option class="cap-option" value="256">256 GB</option>
+                <option class="cap-option" value="512">512 GB</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Cantidad</label>
+            <input type="text" id="cantidad">
+        </div>
+        <div class="form-control">
+            <button type="button" onclick="calculatePrice()">Cotizar</button>
+        </div>
+        <div id="result" class="form-control">Aqui va el mensaje</div>
+        </form>
+    </div>
+</body>
+
+</html>
